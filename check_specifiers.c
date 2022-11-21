@@ -13,7 +13,7 @@ int (*check_specifier(const char *format))(va_list)
 {
 	int i;
 
-	func_t my_array[6] = {
+	func_t my_array[] = {
 		{"c", print_char},
 		{"s", print_str},
 		{"%", print_cent},
@@ -25,9 +25,8 @@ int (*check_specifier(const char *format))(va_list)
 	{
 		if (*(my_array[i].t) == *format)
 		{
-			return (my_array[i].f);
+			break;
 		}
 	}
-
-	return (NULL);
+	return (my_array[i].f);
 }
