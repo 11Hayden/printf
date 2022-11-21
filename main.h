@@ -19,7 +19,7 @@ typedef struct func
 	char *t;
 	int (*f)(va_list);
 } func_t;
-
+int _putchar(char c);
 int print_char(va_list);
 int print_str(va_list);
 int print_cent(va_list);

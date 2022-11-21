@@ -17,8 +17,8 @@ int (*check_specifier(const char *format))(va_list)
 		{"c", print_char},
 		{"s", print_str},
 		{"%", print_cent},
-		{"i", print_int},
-		{"d", print_dec},
+/*		{"i", print_int},*/
+/*		{"d", print_dec},*/
 		{NULL, NULL}};
 
 	for (i = 0; my_array[i].t != NULL; i++)

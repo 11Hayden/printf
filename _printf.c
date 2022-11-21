@@ -31,10 +31,10 @@ int _printf(const char *format, ...)
 		}
 		if (!format[i])
 			return (count);
-		f = check_for_specifiers(&format[i + 1]);
+		f = check_specifier(&format[i + 1]);
 		if (f != NULL)
 		{
-			count += f(valist);
+			count += f(args);
 			i += 2;
 			continue;
 		}
