@@ -7,7 +7,7 @@
 #include <unistd.h>
 
 int _printf(const char *format, ...);
-int (*check_specifier(const char*))(va_list);
+int (*check_specifier(const char *))(va_list);
 
 /**
  * struct func - struct for specifier to printer
